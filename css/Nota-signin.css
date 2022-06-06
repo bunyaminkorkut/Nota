@@ -1,0 +1,364 @@
+:root{
+    --color1:#d5f4e6;
+    --color2:#80ced6;
+    --color3:#fefbd8;
+    --color4:#618685;
+    --color5: #92a8d1;
+    --color6: #034f84;
+    --color7: #f7cac9;
+    --color8: #f7786b;
+    --logofont: 'Comfortaa', cursive;
+    --navfont: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+/* header style */
+.navbar a{
+    text-decoration: none;
+    color: black;
+    
+}
+.navbar{
+    background-color: var(--color7);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.containernav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    /* height: 8rem; */
+}
+.logo{
+    display: flex;
+    justify-content: left;
+    flex-grow: 2;
+    font-size: 1.8rem;
+    font-family: var(--logofont);
+}
+.navlinks{
+    flex-grow: 8;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+.navbar-list{
+    padding: 1.1rem;
+    font-size: 1.6rem;
+    font-family: var(--navfont);
+}
+.navbar-list a:hover{
+    color: var(--color4);
+}
+.logo img{
+    height: 5.5rem;
+    margin: auto 1rem;
+}
+
+.button1{
+    background-color: var(--color5);
+    border-radius: 15px;
+}
+.navbarbutton{
+    display: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px){
+    html{
+        font-size: 6px;
+    }
+    .containernav{
+        flex-direction: column;
+    }
+    .navlinks{
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    .navbar-list{
+        font-size: 2.7rem;
+    }
+    .navbar{
+        position: static;
+    }
+    .navbarbutton{
+        display: flex;
+        align-self: right;
+        padding-left: 35vw;
+    }
+    .navbarbutton a{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .containernav{
+        width: 90vw;
+    }
+    .mobile{
+        display: none;
+    }
+}
+@media (min-width: 600px) and (max-width:767px){
+    html{
+        font-size:8px ;
+    }
+    .navbar{
+        position: static;
+    }
+    .navbar-list{
+        font-size: 2.7rem;
+    }
+    .containernav{
+        flex-direction: column;
+    }
+    .navlinks{
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    .navbarbutton{
+        display: flex;
+        align-self: right;
+        padding-left: 35vw;
+    }
+    .navbarbutton a{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .containernav{
+        width: 90vw;
+    }
+    .mobile{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width:899px){
+    html{
+        font-size: 9px;
+    }
+    .containernav{
+        width: 750px;
+    }
+}
+@media (min-width: 900px) and (max-width:1199px){
+    html{
+        font-size: 11px;
+    }
+    .containernav{
+        width: 850px;
+    }
+}
+
+/* Main Style */
+
+.containersignup{
+    
+    background-color: var(--color5);
+    height: 100vh;
+    display: flex;
+}
+.signupform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.signuptitle{
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: var(--navfont);
+}
+.items{
+    text-align: center;
+}
+.items h4{
+    margin: 5px 0 2px 0;
+    font-size: 2rem;
+    font-family: var(--navfont);
+    color: #fff;
+}
+.form{
+    width: 90%;
+    margin: 0 auto;
+}
+#fname{
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+.register{
+    width: 25%;
+    margin: 12px auto 8px;
+    height: 48px;
+    font-family: var(--navfont);
+    background-color: var(--color4);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+}
+.register a{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    
+}
+.infotext{
+    color: white;
+    font-family: var(--navfont);
+    text-align: center;
+    font-size: 1.5rem;
+    width: 70%;
+    margin: auto;
+}
+.infotext a{
+    color: white;
+    text-decoration: underline;
+}
+::placeholder{
+    opacity: 0.4;
+}
+.remember{
+    color: white;
+    font-size: 1.5rem;
+    font-family: var(--navfont);
+    align-self: flex-start;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px){
+    .form{
+        width: 95%;
+    }
+    .signupform{
+        width: 95%;
+    }
+    #fname{
+        width: 100%;
+        font-size: 3rem;
+    }
+    .items h4{
+        font-size: 3rem;
+    }
+    .signuptitle{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .containersignup{
+        padding-top: 100px;
+    }
+
+}
+@media (min-width: 600px) and (max-width:767px){
+    .form{
+        width: 95%;
+    }
+    .signupform{
+        width: 95%;
+    }
+}
+@media (min-width: 768px) and (max-width:899px){
+
+    .containersignup{
+        height: 110vw;
+        padding-top: 55vw;
+    }
+    
+}
+@media (min-width: 900px) and (max-width:1199px){
+    .containersignup{
+        height: 110vw;
+        padding-top: 55vw;
+    }
+    
+}
+
+/* Footer styles */
+
+footer{
+    background-color: var(--color3);
+}
+.containerfooter{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    font-size: 1.6rem;
+    font-family: var(--navfont)
+}
+.footer-title{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.contact a{
+    color: black;
+}
+.social-media{
+    justify-self: flex-end;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+.social-media a{
+    margin: 10px;
+    color: black;
+}
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px){
+    .containerfooter{
+        width: 80vw;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+    .social-media a{
+        margin: 20px;
+    }
+    .contact{
+        font-size: 2.2rem;
+    }
+    .footer-title{
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 600px) and (max-width:767px){
+    .containerfooter{
+        width: 80vw;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .social-media a{
+        margin: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width:899px){
+    .containerfooter{
+        width: 750px;
+    }
+}
+@media (min-width: 900px) and (max-width:1199px){
+    .containerfooter{
+        width: 80vw;
+    }
+}
