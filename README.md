@@ -1,2 +1,2 @@
 # Nota
-DEMO: https://bunyamink2.github.io/Nota/
+DEMO: https://bunyaminkorkut.github.io/Nota/
